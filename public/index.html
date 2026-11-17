@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7fb">
+  <title>הצ׳אט שלי</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main class="chat-shell">
+    <header class="topbar">
+      <div class="brand-mark" aria-hidden="true">AI</div>
+      <div>
+        <h1>הצ׳אט שלי</h1>
+        <p>שאלו אותי כל דבר</p>
+      </div>
+      <span class="status"><span class="status-dot"></span> מוכן לעזור</span>
+    </header>
+
+    <section id="messages" class="messages" aria-label="השיחה" aria-live="polite">
+      <div class="welcome" id="welcome">
+        <div class="welcome-icon" aria-hidden="true">✦</div>
+        <h2>במה אפשר לעזור?</h2>
+        <p>אפשר לשאול שאלה, לבקש הסבר או לחשוב יחד על רעיון.</p>
+      </div>
+    </section>
+
+    <form id="chat-form" class="composer">
+      <label class="visually-hidden" for="message-input">ההודעה שלך</label>
+      <textarea id="message-input" rows="1" placeholder="כתבו הודעה..." maxlength="4000" required></textarea>
+      <button id="send-button" type="submit" aria-label="שליחה" title="שליחה">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12 20 4l-5 16-3-7-8-1Zm8 1 8-9"/></svg>
+      </button>
+      <p class="disclaimer">התשובות נוצרות באמצעות בינה מלאכותית. כדאי לבדוק מידע חשוב.</p>
+    </form>
+  </main>
+</body>
+</html>
